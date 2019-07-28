@@ -1,0 +1,11 @@
+{
+  "name": "Game_Project",
+  "version": "0.0.1",
+  "dependencies": {
+    "@types/jasmine": "^2.8.8",
+    "jasmine-reporters": "^2.3.1",
+    "typescript": "^2.7.2",
+    "protractor": "5.3.2",
+    "protractor-jasmine2-html-reporter": "^0.0.7"
+  }
+}
