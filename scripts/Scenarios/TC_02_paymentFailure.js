@@ -36,7 +36,6 @@ describe("pillowPaymentFailure", () => __awaiter(this, void 0, void 0, function*
     it("Continue", () => __awaiter(this, void 0, void 0, function* () {
         yield protractor_1.browser.waitForAngularEnabled(false);
         const pay = new selectPaymentPage_1.selectPaymentPage();
-        console.log("reached iFrame");
         yield pay.selectPaymentFrame();
         yield pay.validateContinueButton();
         yield pay.clickContinuePay();

@@ -32,7 +32,6 @@ describe("pillowPaymentFailure", async () => {
     it("Continue", async () => {
         await browser.waitForAngularEnabled(false);
         const pay = new selectPaymentPage();
-        console.log("reached iFrame")
         await pay.selectPaymentFrame();
         await pay.validateContinueButton();
         await pay.clickContinuePay();
