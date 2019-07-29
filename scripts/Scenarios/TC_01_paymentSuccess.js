@@ -12,7 +12,8 @@ const protractor_1 = require("protractor");
 const homePage_1 = require("../pageFactory/homePage/homePage");
 const enterDetailsPage_1 = require("../pageFactory/enterDetails/enterDetailsPage");
 const selectPaymentPage_1 = require("../pageFactory/selectPayment/selectPaymentPage");
-describe("pillowPaymentFailure", () => __awaiter(this, void 0, void 0, function* () {
+const selectPaymentActions_1 = require("../pageFactory/selectPayment/selectPaymentActions");
+describe("pillowPaymentSuccess", () => __awaiter(this, void 0, void 0, function* () {
     it("Open Application", () => __awaiter(this, void 0, void 0, function* () {
         yield protractor_1.browser.waitForAngularEnabled(false);
         protractor_1.browser.get("https://demo.midtrans.com/");
@@ -47,7 +48,9 @@ describe("pillowPaymentFailure", () => __awaiter(this, void 0, void 0, function*
     it("Enter Credit Card Details", () => __awaiter(this, void 0, void 0, function* () {
         yield protractor_1.browser.waitForAngularEnabled(false);
         const pay2 = new selectPaymentPage_1.selectPaymentPage();
-        yield pay2.enterCCNumber();
+        const pay = new selectPaymentActions_1.selectPaymentActions();
+        yield pay.enterCardNumber("4811111111111114");
+        /*        await pay2.enterCCNumber();*/
         yield pay2.enterExpiryDate();
         yield pay2.enterCVVCode();
     }));
@@ -71,15 +74,16 @@ describe("pillowPaymentFailure", () => __awaiter(this, void 0, void 0, function*
         const pay = new selectPaymentPage_1.selectPaymentPage();
         yield pay.click3DSOK();
     }));
-    it("Open Payment Frame", () => __awaiter(this, void 0, void 0, function* () {
-        yield protractor_1.browser.waitForAngularEnabled(false);
-        const pay1 = new selectPaymentPage_1.selectPaymentPage();
-        yield pay1.selectPaymentFrame();
-    }));
-    it("Success Status", () => __awaiter(this, void 0, void 0, function* () {
-        yield protractor_1.browser.waitForAngularEnabled(false);
-        const status = new selectPaymentPage_1.selectPaymentPage();
-        yield status.getTransactionStatusSuccess();
-    }));
+    /*    it("Open Payment Frame", async () => {
+            await browser.waitForAngularEnabled(false);
+            const pay1 = new selectPaymentPage();
+            await pay1.selectPaymentFrame();
+        });
+    
+        it("Success Status", async () => {
+            await browser.waitForAngularEnabled(false);
+            const status = new selectPaymentPage();
+            await status.getTransactionStatusSuccess();
+        });*/
 }));
 //# sourceMappingURL=TC_01_paymentSuccess.js.map

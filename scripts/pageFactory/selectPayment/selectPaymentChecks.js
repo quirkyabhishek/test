@@ -16,16 +16,6 @@ class selectPaymentChecks {
             return yield protractor_1.element(locators.LOC_ContinueButton).getText();
         });
     }
-    getTransactionSuccess() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield protractor_1.element(locators.LOC_TransactionSuccess).getText();
-        });
-    }
-    getTransactionFailure() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield protractor_1.element(locators.LOC_TransactionFail).getText();
-        });
-    }
 }
 exports.selectPaymentChecks = selectPaymentChecks;
 //# sourceMappingURL=selectPaymentChecks.js.map

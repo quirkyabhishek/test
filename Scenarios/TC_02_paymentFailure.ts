@@ -3,6 +3,8 @@ import {async} from "q";
 import {homePage} from "../pageFactory/homePage/homePage";
 import {enterDetailsPage} from "../pageFactory/enterDetails/enterDetailsPage";
 import {selectPaymentPage} from "../pageFactory/selectPayment/selectPaymentPage";
+import {selectPaymentActions} from "../pageFactory/selectPayment/selectPaymentActions";
+
 
 describe("pillowPaymentFailure", async () => {
     it("Open Application", async () => {
@@ -45,7 +47,9 @@ describe("pillowPaymentFailure", async () => {
     it("Enter Credit Card Details", async () => {
         await browser.waitForAngularEnabled(false);
         const pay2 = new selectPaymentPage();
-        await pay2.enterCCNumber();
+        const pay = new selectPaymentActions();
+        await pay.enterCardNumber("4911111111111113");
+/*        await pay2.enterCCNumber();*/
         await pay2.enterExpiryDate();
         await pay2.enterCVVCode();
     });
@@ -73,16 +77,18 @@ describe("pillowPaymentFailure", async () => {
         await pay.click3DSOK();
     });
 
+/*
     it("Open Payment Frame", async () => {
         await browser.waitForAngularEnabled(false);
         const pay1 = new selectPaymentPage();
         await pay1.selectPaymentFrame();
     });
 
-    it("Success Status", async () => {
+    it("Failed Status", async () => {
         await browser.waitForAngularEnabled(false);
         const status = new selectPaymentPage();
-        await status.getTransactionStatusSuccess();
+        await status.getTransactionStatusFail();
     });
+*/
 
 });

@@ -3,8 +3,9 @@ import {async} from "q";
 import {homePage} from "../pageFactory/homePage/homePage";
 import {enterDetailsPage} from "../pageFactory/enterDetails/enterDetailsPage";
 import {selectPaymentPage} from "../pageFactory/selectPayment/selectPaymentPage";
+import {selectPaymentActions} from "../pageFactory/selectPayment/selectPaymentActions";
 
-describe("pillowPaymentFailure", async () => {
+describe("pillowPaymentSuccess", async () => {
     it("Open Application", async () => {
         await browser.waitForAngularEnabled(false);
         browser.get("https://demo.midtrans.com/");
@@ -45,7 +46,9 @@ describe("pillowPaymentFailure", async () => {
     it("Enter Credit Card Details", async () => {
         await browser.waitForAngularEnabled(false);
         const pay2 = new selectPaymentPage();
-        await pay2.enterCCNumber();
+        const pay = new selectPaymentActions();
+        await pay.enterCardNumber("4811111111111114");
+/*        await pay2.enterCCNumber();*/
         await pay2.enterExpiryDate();
         await pay2.enterCVVCode();
     });
@@ -73,7 +76,7 @@ describe("pillowPaymentFailure", async () => {
         await pay.click3DSOK();
     });
 
-    it("Open Payment Frame", async () => {
+/*    it("Open Payment Frame", async () => {
         await browser.waitForAngularEnabled(false);
         const pay1 = new selectPaymentPage();
         await pay1.selectPaymentFrame();
@@ -83,6 +86,6 @@ describe("pillowPaymentFailure", async () => {
         await browser.waitForAngularEnabled(false);
         const status = new selectPaymentPage();
         await status.getTransactionStatusSuccess();
-    });
+    });*/
 
 });

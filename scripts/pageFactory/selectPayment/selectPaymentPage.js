@@ -55,7 +55,12 @@ class selectPaymentPage {
     }
     waitForSuccessToDisplay(timeout) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_TransactionSuccess, timeout);
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
+        });
+    }
+    waitForFailureToDisplay(timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
         });
     }
     waitForCreditCardToDisplay(timeout) {
@@ -73,12 +78,10 @@ class selectPaymentPage {
             return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_3DSPINTextBox, timeout);
         });
     }
-    enterCCNumber() {
-        return __awaiter(this, void 0, void 0, function* () {
-            yield this.waitForCreditCardFieldsToDisplay(5000);
-            yield this.action.enterCardNumber("4811111111111114");
-        });
-    }
+    /*    public async enterCCNumber() {
+            await this.waitForCreditCardFieldsToDisplay(5000);
+            await this.action.enterCardNumber("4811111111111114");
+        }*/
     enterExpiryDate() {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.waitForCreditCardFieldsToDisplay(5000);
@@ -100,22 +103,6 @@ class selectPaymentPage {
     click3DSOK() {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.action.clickOKon3DS();
-        });
-    }
-    getTransactionStatusSuccess() {
-        return __awaiter(this, void 0, void 0, function* () {
-            yield this.waitForSuccessToDisplay(5000);
-            const name = yield this.check.getTransactionSuccess();
-            expect(name).toEqual("Transaction successful", "Transaction Status Missed");
-            console.log("Transaction successful");
-        });
-    }
-    getTransactionStatusFail() {
-        return __awaiter(this, void 0, void 0, function* () {
-            yield this.waitForSuccessToDisplay(5000);
-            const name = yield this.check.getTransactionStatusFail();
-            expect(name).toEqual("Transaction failed", "Transaction Status Missed");
-            console.log("Transaction failed");
         });
     }
 }
