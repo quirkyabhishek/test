@@ -7,10 +7,10 @@ export class selectPaymentChecks {
         return await element(locators.LOC_ContinueButton).getText();
     }
 
-/*    async getTransactionSuccess(): Promise<string> {
+    async getTransactionSuccess(): Promise<string> {
         return await element(locators.LOC_ContinueButton).getText();
     }
     async getTransactionFailure(): Promise<string> {
         return await element(locators.LOC_ContinueButton).getText();
-    }*/
+    }
 }

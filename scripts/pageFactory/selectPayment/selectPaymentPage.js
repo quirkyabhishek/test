@@ -53,12 +53,10 @@ class selectPaymentPage {
             return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
         });
     }
-    waitForSuccessToDisplay(timeout) {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
-        });
-    }
-    waitForFailureToDisplay(timeout) {
+    /*    public async waitForSuccessToDisplay(timeout: number): Promise<boolean> {
+            return await WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
+        }*/
+    waitForStatusToDisplay(timeout) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
         });
@@ -103,6 +101,23 @@ class selectPaymentPage {
     click3DSOK() {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.action.clickOKon3DS();
+            yield this.waitForStatusToDisplay(2000);
+        });
+    }
+    getTransactionStatusSuccess() {
+        return __awaiter(this, void 0, void 0, function* () {
+            /*        await this.waitForSuccessToDisplay(5000);*/
+            const name1 = yield this.check.getTransactionSuccess();
+            expect(name1).toEqual("DONE", "Transaction Status Missed");
+            console.log("Transaction successful");
+        });
+    }
+    getTransactionStatusFail() {
+        return __awaiter(this, void 0, void 0, function* () {
+            /*        await this.waitForFailureToDisplay(5000);*/
+            const name2 = yield this.check.getTransactionFailure();
+            expect(name2).toEqual("RETRY", "Transaction Status Missed");
+            console.log("Transaction failed");
         });
     }
 }

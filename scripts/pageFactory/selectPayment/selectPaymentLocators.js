@@ -9,7 +9,5 @@ module.exports = {
     LOC_CVVTextBox: protractor_1.by.css(".input-group.col-xs-5 input[type=tel]"),
     LOC_3DSPINTextBox: protractor_1.by.css("#PaRes"),
     LOC_3DSOKButton: protractor_1.by.xpath("//*[@id=\"acsForm\"]/div[6]/div/button[1]"),
-    LOC_TransactionFail: protractor_1.by.xpath("//*[@id=\"application\"]/div[3]/div/div/div/div/div/div[1]/span"),
-    LOC_TransactionSuccess: protractor_1.by.xpath("//*[@id=\"application\"]/div[3]/div/div/div/div/div/div[2]")
 };
 //# sourceMappingURL=selectPaymentLocators.js.map

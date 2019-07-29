@@ -38,10 +38,10 @@ export class selectPaymentPage {
     public async waitForContinueToDisplay(timeout: number): Promise<boolean> {
         return await WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
     }
-    public async waitForSuccessToDisplay(timeout: number): Promise<boolean> {
+/*    public async waitForSuccessToDisplay(timeout: number): Promise<boolean> {
         return await WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
-    }
-    public async waitForFailureToDisplay(timeout: number): Promise<boolean> {
+    }*/
+    public async waitForStatusToDisplay(timeout: number): Promise<boolean> {
         return await WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
     }
 
@@ -73,19 +73,20 @@ export class selectPaymentPage {
 
     public async click3DSOK() {
         await this.action.clickOKon3DS();
+        await this.waitForStatusToDisplay(2000);
     }
 
-/*    public async getTransactionStatusSuccess() {
-        await this.waitForSuccessToDisplay(5000);
-        const name = await this.check.getTransactionSuccess();
-        expect(name).toEqual("DONE", "Transaction Status Missed");
+    public async getTransactionStatusSuccess() {
+/*        await this.waitForSuccessToDisplay(5000);*/
+        const name1 = await this.check.getTransactionSuccess();
+        expect(name1).toEqual("DONE", "Transaction Status Missed");
         console.log("Transaction successful");
     }
 
     public async getTransactionStatusFail() {
-        await this.waitForFailureToDisplay(5000);
-        const name = await this.check.getTransactionFailure();
-        expect(name).toEqual("RETRY", "Transaction Status Missed");
+/*        await this.waitForFailureToDisplay(5000);*/
+        const name2 = await this.check.getTransactionFailure();
+        expect(name2).toEqual("RETRY", "Transaction Status Missed");
         console.log("Transaction failed");
-    }*/
+    }
 }
