@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c1a7012-c470-45e1-b11c-d7390ede59aa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Common/WaitUtil.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenarios/TC_02_paymentFailure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Scenarios/TC_02_paymentFailure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageFactory/homePage/homePageLocators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pageFactory/homePage/homePageLocators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentLocators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentLocators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Scenarios/TC_01_paymentSuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Scenarios/TC_01_paymentSuccess.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Scenarios/TC_01_paymentSuccess.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Scenarios/TC_01_paymentSuccess.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Scenarios/TC_02_paymentFailure.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Scenarios/TC_02_paymentFailure.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Scenarios/TC_02_paymentFailure.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Scenarios/TC_02_paymentFailure.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/homePage/homePageLocators.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/homePage/homePageLocators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/homePage/homePageLocators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/homePage/homePageLocators.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentActions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentActions.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentChecks.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentChecks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentChecks.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentChecks.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentLocators.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentLocators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentLocators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentLocators.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentPage.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pageFactory/selectPayment/selectPaymentPage.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TC_02_paymentFailure.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TC_02_paymentFailure.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scenarios/TC_02_paymentFailure.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="-1022">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -33,10 +54,22 @@
       <file leaf-file-name="selectPaymentPage.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="287">
+              <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TC_01_paymentSuccess.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +78,20 @@
       <file leaf-file-name="selectPaymentActions.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentActions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state relative-caret-position="185">
+              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selectPaymentChecks.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -57,8 +102,8 @@
       <file leaf-file-name="selectPaymentLocators.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentLocators.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
+            <state relative-caret-position="204">
+              <caret line="12" column="96" lean-forward="true" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -67,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/config.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -92,22 +137,24 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/pageFactory/homePage/homePageLocator.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts" />
         <option value="$PROJECT_DIR$/config.ts" />
         <option value="$PROJECT_DIR$/pageFactory/homePage/homePageAction.ts" />
         <option value="$PROJECT_DIR$/commonTest.ts" />
         <option value="$PROJECT_DIR$/pageFactory/homePage/homePageCheck.ts" />
-        <option value="$PROJECT_DIR$/pageFactory/homePage/homePageLocators.ts" />
-        <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentActions.ts" />
-        <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts" />
         <option value="$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsLocators.ts" />
         <option value="$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsActions.ts" />
         <option value="$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsChecks.ts" />
         <option value="$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsPage.ts" />
         <option value="$PROJECT_DIR$/pageFactory/homePage/homePage.ts" />
-        <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts" />
+        <option value="$PROJECT_DIR$/Common/waitUtil.ts" />
+        <option value="$PROJECT_DIR$/Common/WaitUtil.ts" />
+        <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentActions.ts" />
+        <option value="$PROJECT_DIR$/pageFactory/homePage/homePageLocators.ts" />
+        <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts" />
         <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentLocators.ts" />
         <option value="$PROJECT_DIR$/Scenarios/TC_02_paymentFailure.ts" />
+        <option value="$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts" />
+        <option value="$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts" />
       </list>
     </option>
   </component>
@@ -143,25 +190,29 @@
             <path>
               <item name="Game_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Game_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Game_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Game_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="pageFactory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Game_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="pageFactory" type="462c0819:PsiDirectoryNode" />
+              <item name="enterDetails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game_Project" type="462c0819:PsiDirectoryNode" />
               <item name="pageFactory" type="462c0819:PsiDirectoryNode" />
               <item name="homePage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Scenarios" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,25 +256,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564210894514</updated>
-      <workItem from="1564210896229" duration="22650000" />
+      <workItem from="1564210896229" duration="45450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22650000" />
+    <option name="totallyTimeSpent" value="45450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="5" weight="0.32905984" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24983476" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24983476" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32905984" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32905984" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32905984" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32905984" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3988604" />
@@ -235,6 +286,26 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32905984" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24983476" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="TypeScript" order="5" weight="0.32905984" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.3988604" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32905984" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32905984" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -244,27 +315,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Scenarios/TC_02_paymentFailure.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -313,6 +367,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsLocators.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/pageFactory/homePage/homePageLocators.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/pageFactory/homePage/homePageCheck.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsChecks.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/protractor/built/ptor.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsActions.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -323,91 +436,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsChecks.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsLocators.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pageFactory/homePage/homePageLocators.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pageFactory/enterDetails/enterDetailsPage.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ts">
+    <entry file="file://$PROJECT_DIR$/Common/WaitUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts">
+    <entry file="file://$PROJECT_DIR$/pageFactory/homePage/homePageLocators.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/pageFactory/homePage/homePageLocators.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentLocators.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
+        <state relative-caret-position="204">
+          <caret line="12" column="96" lean-forward="true" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentActions.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="185">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts">
+    <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentChecks.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="170">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scenarios/TC_02_paymentFailure.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        <state relative-caret-position="-1022">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pageFactory/selectPayment/selectPaymentPage.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scenarios/TC_01_paymentSuccess.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>

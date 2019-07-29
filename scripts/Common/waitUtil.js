@@ -9,23 +9,21 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-const locators = require("./selectPaymentLocators");
-class selectPaymentChecks {
-    getContinueButtonName() {
+var WaitUtil;
+(function (WaitUtil) {
+    function waitForElementVisible(eltLocator, timeout) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield protractor_1.element(locators.LOC_ContinueButton).getText();
+            try {
+                const until = yield protractor_1.protractor.ExpectedConditions;
+                const isVisible = yield protractor_1.browser.wait(until.visibilityOf(protractor_1.element(eltLocator)), timeout, "Element locator " + eltLocator + " still not visible after " + timeout + " milli seconds");
+                return Boolean(isVisible);
+            }
+            catch (e) {
+                console.log(e);
+                return false;
+            }
         });
     }
-    getTransactionSuccess() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield protractor_1.element(locators.LOC_TransactionSuccess).getText();
-        });
-    }
-    getTransactionFailure() {
-        return __awaiter(this, void 0, void 0, function* () {
-            return yield protractor_1.element(locators.LOC_TransactionFail).getText();
-        });
-    }
-}
-exports.selectPaymentChecks = selectPaymentChecks;
-//# sourceMappingURL=selectPaymentChecks.js.map
+    WaitUtil.waitForElementVisible = waitForElementVisible;
+})(WaitUtil = exports.WaitUtil || (exports.WaitUtil = {}));
+//# sourceMappingURL=waitUtil.js.map

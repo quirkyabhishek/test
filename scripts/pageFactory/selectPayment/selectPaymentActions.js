@@ -23,6 +23,32 @@ class selectPaymentActions {
             console.log("After Click4");
         });
     }
+    enterCardNumber(ccnumber) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(locators.LOC_CardNumberTextBox).sendKeys(ccnumber);
+        });
+    }
+    enterExpiry(expirydate) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(locators.LOC_ExpiryDateTextBox).sendKeys(expirydate);
+        });
+    }
+    enterCvv(cvv) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(locators.LOC_CVVTextBox).sendKeys(cvv);
+        });
+    }
+    enter3DS(threeds) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(locators.LOC_3DSPINTextBox).sendKeys(threeds);
+        });
+    }
+    clickOKon3DS() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.element(locators.LOC_3DSOKButton).click();
+            console.log("After Click6");
+        });
+    }
 }
 exports.selectPaymentActions = selectPaymentActions;
 //# sourceMappingURL=selectPaymentActions.js.map

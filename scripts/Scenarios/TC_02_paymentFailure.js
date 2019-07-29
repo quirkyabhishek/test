@@ -36,7 +36,6 @@ describe("pillowPaymentFailure", () => __awaiter(this, void 0, void 0, function*
     it("Continue", () => __awaiter(this, void 0, void 0, function* () {
         yield protractor_1.browser.waitForAngularEnabled(false);
         const pay = new selectPaymentPage_1.selectPaymentPage();
-        yield pay.selectPaymentFrame();
         yield pay.validateContinueButton();
         yield pay.clickContinuePay();
     }));
@@ -44,6 +43,43 @@ describe("pillowPaymentFailure", () => __awaiter(this, void 0, void 0, function*
         yield protractor_1.browser.waitForAngularEnabled(false);
         const pay2 = new selectPaymentPage_1.selectPaymentPage();
         yield pay2.clickCreditCardButton();
+    }));
+    it("Enter Credit Card Details", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const pay2 = new selectPaymentPage_1.selectPaymentPage();
+        yield pay2.enterCCNumber();
+        yield pay2.enterExpiryDate();
+        yield pay2.enterCVVCode();
+    }));
+    it("Pay Now", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const pay = new selectPaymentPage_1.selectPaymentPage();
+        yield pay.clickContinuePay();
+    }));
+    it("Open Payment Frame", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const pay1 = new selectPaymentPage_1.selectPaymentPage();
+        yield pay1.selectPaymentFrame();
+    }));
+    it("Enter 3DS PIN", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const pay2 = new selectPaymentPage_1.selectPaymentPage();
+        yield pay2.enter3DSCode();
+    }));
+    it("Click 3DS OK Button", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const pay = new selectPaymentPage_1.selectPaymentPage();
+        yield pay.click3DSOK();
+    }));
+    it("Open Payment Frame", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const pay1 = new selectPaymentPage_1.selectPaymentPage();
+        yield pay1.selectPaymentFrame();
+    }));
+    it("Success Status", () => __awaiter(this, void 0, void 0, function* () {
+        yield protractor_1.browser.waitForAngularEnabled(false);
+        const status = new selectPaymentPage_1.selectPaymentPage();
+        yield status.getTransactionStatusSuccess();
     }));
 }));
 //# sourceMappingURL=TC_02_paymentFailure.js.map

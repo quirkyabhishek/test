@@ -11,7 +11,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const selectPaymentActions_1 = require("./selectPaymentActions");
 const selectPaymentChecks_1 = require("./selectPaymentChecks");
 const protractor_1 = require("protractor");
-const locator = require("./selectPaymentLocators");
+const locators = require("./selectPaymentLocators");
+const WaitUtil_1 = require("../../Common/WaitUtil");
 class selectPaymentPage {
     constructor() {
         this.action = new selectPaymentActions_1.selectPaymentActions();
@@ -19,16 +20,23 @@ class selectPaymentPage {
     }
     selectPaymentFrame() {
         return __awaiter(this, void 0, void 0, function* () {
-            protractor_1.browser.switchTo().frame(protractor_1.element(locator.LOC_PaymentFrame));
+            try {
+                yield protractor_1.browser.switchTo().frame(0);
+            }
+            catch (e) {
+                console.log(e);
+            }
         });
     }
     clickContinuePay() {
         return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForContinueToDisplay(5000);
             yield this.action.clickContinueButton();
         });
     }
     validateContinueButton() {
         return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForContinueToDisplay(5000);
             const name = yield this.check.getContinueButtonName();
             expect(name).toEqual("CONTINUE", "Button name not displayed properly");
             console.log("Continue Text Matched");
@@ -36,7 +44,78 @@ class selectPaymentPage {
     }
     clickCreditCardButton() {
         return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForCreditCardToDisplay(5000);
             yield this.action.clickCreditCardButton();
+        });
+    }
+    waitForContinueToDisplay(timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_ContinueButton, timeout);
+        });
+    }
+    waitForSuccessToDisplay(timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_TransactionSuccess, timeout);
+        });
+    }
+    waitForCreditCardToDisplay(timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_CreditCardButton, timeout);
+        });
+    }
+    waitForCreditCardFieldsToDisplay(timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_CardNumberTextBox, timeout);
+        });
+    }
+    waitForCredit3DSFieldsToDisplay(timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield WaitUtil_1.WaitUtil.waitForElementVisible(locators.LOC_3DSPINTextBox, timeout);
+        });
+    }
+    enterCCNumber() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForCreditCardFieldsToDisplay(5000);
+            yield this.action.enterCardNumber("4811111111111114");
+        });
+    }
+    enterExpiryDate() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForCreditCardFieldsToDisplay(5000);
+            yield this.action.enterExpiry("02/20");
+        });
+    }
+    enterCVVCode() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForCreditCardFieldsToDisplay(5000);
+            yield this.action.enterCvv("123");
+        });
+    }
+    enter3DSCode() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForCredit3DSFieldsToDisplay(5000);
+            yield this.action.enter3DS("112233");
+        });
+    }
+    click3DSOK() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.action.clickOKon3DS();
+        });
+    }
+    getTransactionStatusSuccess() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForSuccessToDisplay(5000);
+            const name = yield this.check.getTransactionSuccess();
+            expect(name).toEqual("Transaction successful", "Transaction Status Missed");
+            console.log("Transaction successful");
+        });
+    }
+    getTransactionStatusFail() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.waitForSuccessToDisplay(5000);
+            const name = yield this.check.getTransactionStatusFail();
+            expect(name).toEqual("Transaction failed", "Transaction Status Missed");
+            console.log("Transaction failed");
         });
     }
 }
