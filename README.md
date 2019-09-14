@@ -1,4 +1,5 @@
 *Pillow Store*
+Automation script using Protractor to Purchase a product on Mid-Trans test website for a payment success scenario and a failure scenario.
 
 Pre-requisites:
 1. Install java
